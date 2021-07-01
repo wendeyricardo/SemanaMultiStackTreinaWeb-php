@@ -60,6 +60,7 @@
     @endforelse    
   </tbody>
 </table>
+<a href="{{route('diaristas.create')}}" class="btn btn-success">Nova Diarista</a>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
