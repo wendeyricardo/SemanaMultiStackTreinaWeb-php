@@ -54,4 +54,13 @@ class DiaristaController extends Controller
 
         return redirect()->route('diaristas.index');
     }
+
+    public function destroy(int $id)
+    {
+        $diarista = Diarista::findOrFail($id);
+
+        $diarista->delete();
+
+        return redirect()->route('diaristas.index');
+    }
 }
